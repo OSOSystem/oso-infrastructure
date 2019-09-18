@@ -8,3 +8,5 @@ rancher/system-tools
 system/rancher/kube_config_rancher-cluster.yml
 
 system/rancher/rancher-cluster.rkestate
+
+system/rancher/system-tools
