@@ -1,0 +1,23 @@
+nodes:
+  - address: 51.38.113.244
+    user: root
+    role: [controlplane,worker,etcd]
+    ssh_key_path: ~/.ssh/id_rsa
+  - address: 51.89.23.221
+    user: root
+    role: [controlplane,worker,etcd]
+    ssh_key_path: ~/.ssh/id_rsa
+  - address: 51.75.69.154
+    user: root
+    role: [controlplane,worker,etcd]
+    ssh_key_path: ~/.ssh/id_rsa
+
+services:
+  etcd:
+    snapshot: true
+    creation: 6h
+    retention: 240h
+
+cluster_name: rancher
+ignore_docker_version: true
+ssh_agent_auth: true
